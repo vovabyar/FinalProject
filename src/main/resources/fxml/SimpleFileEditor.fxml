@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal"  xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="UI.controllers.SimpleFileEditorController">
+    <top>
+        <MenuBar stylesheets="@menu-bar.css">
+            <Menu text="File" >
+                <MenuItem text="Open" onAction="#openFile"/>
+                <MenuItem text="Save" onAction="#saveFile"/>
+                <MenuItem text="Close"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <AnchorPane>
+            <TextArea stylesheets="@textEdit.css" fx:id="textArea" prefHeight="400.0" prefWidth="600.0" text="Load a text file using the menu"
+                      AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0"
+                      AnchorPane.topAnchor="5.0"/>
+        </AnchorPane>
+    </center>
+    <bottom>
+        <HBox>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0"/>
+            </padding>
+            <HBox alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                <Label fx:id="statusMessage" prefWidth="150.0" text="Checking for Changes..."/>
+                <ProgressBar fx:id="progressBar" prefWidth="150.0" progress="0.0"/>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                <Button fx:id="loadChangesButton" onAction="#loadChanges" text="Load Changes"/>
+            </HBox>
+        </HBox>
+    </bottom>
+</BorderPane>
