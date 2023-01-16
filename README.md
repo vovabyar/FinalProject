@@ -2,6 +2,9 @@
 
 An application has been implemented, which consists of two parts (**UI implementation and console implementation**).
 
+
+![](https://github.com/vovabyar/FinalProject/blob/master/screenshots/1.gif)
+
 ## Console application features:
 ### Description:
 1. A file is received as input. The application automatically determines for the input file (for example, `test.txt.encrypted.encrypted` or `test.json.zip`), then the decryption and unzipping process begins until the source file with extensions  `.txt`, `.json`, `.xml` 
