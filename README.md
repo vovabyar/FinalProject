@@ -86,6 +86,9 @@ There are save and open functions. ProgressBar showing the progress of opening a
 2. `javafx.animation` - for working with animations.
 3. `junit-jupiter-5.8.1` - for working with unit tests.
 
+## UI Tests: trying to use QF-Test
+![](https://github.com/vovabyar/FinalProject/blob/master/screenshots/12.png)
+
 ## And of course, you can't create such a beautiful design without CSS:
 
 ![](https://github.com/vovabyar/FinalProject/blob/master/screenshots/5.png)
