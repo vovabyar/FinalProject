@@ -1,6 +1,6 @@
 # The final task of industrial programming.
 
-An application has been implemented, which consists of two parts (** UI implementation and console implementation **).
+An application has been implemented, which consists of two parts (**UI implementation and console implementation**).
 
 ## Console application features:
 ### Description:
