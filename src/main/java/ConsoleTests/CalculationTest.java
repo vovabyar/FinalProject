@@ -1,10 +1,12 @@
-package ConsoleEngine.CalculationEngine.test;
+package ConsoleTests;
 
 import ConsoleEngine.CalculationEngine.Engine.Calculator;
-import org.testng.annotations.Test;
-import static org.junit.Assert.assertEquals;
 
-class CalculatorTest {
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class CalculationTest {
 
     @Test
     void calculateExpression() {
@@ -67,5 +69,6 @@ class CalculatorTest {
 
         assertEquals("-5.0", Calculator.calculateExpression("+3 + +4 * -2"));
 
-        assertEquals(Calculator.divizionByZero, Calculator.calculateExpression("4 / 0"));    }
+        assertEquals(Calculator.divizionByZero, Calculator.calculateExpression("4 / 0"));
+    }
 }

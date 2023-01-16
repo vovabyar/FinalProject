@@ -5,7 +5,7 @@ module UI {
     requires org.apache.commons.io;
     requires org.testng;
     requires json.simple;
-    requires junit;
+    requires org.junit.jupiter.api;
     requires java.logging;
 
     opens UI to javafx.fxml;
