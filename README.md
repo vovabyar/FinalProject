@@ -5,7 +5,7 @@ An application has been implemented, which consists of two parts (** UI implemen
 ## Console application features:
 ### Description:
 1. A file is received as input. The application automatically determines for the input file (for example, `test.txt.encrypted.encrypted` or `test.json.zip`), then the decryption and unzipping process begins until the source file with extensions  `.txt`, `.json`, `.xml` 
-.. **IMPORTANT: the application supports cases of multi-level nesting of encryption & archiving archives, for example, `test.txt.encrypted.zip.encrypted.encrypted.encrypted.zip.encrypted` etc**;
+  - **IMPORTANT: the application supports cases of multi-level nesting of encryption & archiving archives, for example, `test.txt.encrypted.zip.encrypted.encrypted.encrypted.zip.encrypted` etc**;
 2. Processes the received information by searching for arithmetic expression tokens in any of the `.txt`, `.json`, `.xml` files;
 3. Handles **any arithmetic expression in brackets** with any complexity (within **double** (`4.9e-324 to 1.7e+308`), also taking into account the division by 0 operation.
 3. Writes data to the output file in one of the types `.txt`, `.json`, `.xml` depending on the input file;
